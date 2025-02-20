@@ -5,6 +5,6 @@ public class Solution {
     }
 
     public static String printHello() {
-        return "HelloWorld";
+        return "Hello World";
     }
 }
