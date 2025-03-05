@@ -1,8 +1,8 @@
-package uetoasis;
+package uetoasis.tuan2;
 
 import java.util.Scanner;
 
-public class songuyento {
+public class SoNguyenTo {
     /* */
     public static boolean isPrime(int n) {
         boolean check = true;
@@ -16,6 +16,7 @@ public class songuyento {
         }
         return check;
     }
+    
     /* */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,3 +1,5 @@
+package lam_devuet_bang_java;
+
 import java.util.Scanner;
 
 public class PigLatin {
