@@ -3,7 +3,6 @@ package uetoasis.tuan4;
 import java.util.ArrayList;
 
 public class Account {
-    int nice;
     private double balance = 0;
     private ArrayList<Transaction> transactions = new ArrayList<>();
 
