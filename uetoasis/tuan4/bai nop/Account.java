@@ -1,5 +1,3 @@
-package uetoasis.tuan4;
-
 import java.util.ArrayList;
 
 public class Account {
