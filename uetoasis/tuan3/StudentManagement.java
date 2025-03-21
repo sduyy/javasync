@@ -15,5 +15,9 @@ public class StudentManagement {
         }
     }
 
-    
+    public void studentByGroup() {
+        for (int i = 0; i < 99; i++) {
+            students[i].getInfo();
+        }
+    }
 }
