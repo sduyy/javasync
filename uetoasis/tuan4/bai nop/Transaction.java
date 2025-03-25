@@ -1,5 +1,3 @@
-package uetoasis.tuan4;
-
 public class Transaction {
     private String operation;
     private double amount;
