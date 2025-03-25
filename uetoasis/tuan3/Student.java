@@ -72,5 +72,5 @@ public class Student {
        String var10000 = this.getName();
        return var10000 + " - " + this.getId() + " - " + this.getGroup() + " - " + this.getEmail();
     }
- }
+}
  
