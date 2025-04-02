@@ -1,4 +1,5 @@
 public class Circle extends Shape {
+    protected Point center;
     protected double radius;
 
     /**
@@ -19,8 +20,9 @@ public class Circle extends Shape {
      * This is constructor.
      */
     public Circle(double radius, String color, boolean filled) {
-        super(color, filled);
         this.radius = radius;
+        this.color = color;
+        this.filled = filled;
     }
 
     /**

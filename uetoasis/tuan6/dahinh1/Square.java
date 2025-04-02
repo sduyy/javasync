@@ -11,18 +11,14 @@ public class Square extends Rectangle {
      * This is constructor.
      */
     public Square(double side) {
-        this.width = side;
-        this.length = side;
+        super(side, side);
     }
 
     /**
      * This is constructor.
      */
     public Square(double side, String color, boolean filled) {
-        this.width = side;
-        this.length = side;
-        this.color = color;
-        this.filled = filled;
+        super(side, side, color, filled);
     }
 
     /**
