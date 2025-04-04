@@ -1,3 +1,5 @@
+package uetoasis.tuan6.dahinh2;
+
 public class Circle extends Shape {
     protected Point center;
     protected double radius;

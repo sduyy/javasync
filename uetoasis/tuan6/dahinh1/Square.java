@@ -1,3 +1,5 @@
+package uetoasis.tuan6.dahinh1;
+
 public class Square extends Rectangle {
 
     /**

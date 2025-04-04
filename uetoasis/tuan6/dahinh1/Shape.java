@@ -1,3 +1,5 @@
+package uetoasis.tuan6.dahinh1;
+
 public abstract class Shape {
     protected String color;
     protected boolean filled;

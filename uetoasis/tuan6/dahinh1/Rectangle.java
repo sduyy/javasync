@@ -1,3 +1,5 @@
+package uetoasis.tuan6.dahinh1;
+
 public class Rectangle extends Shape {
     protected double width;
     protected double length;

@@ -1,3 +1,5 @@
+package uetoasis.tuan6.dahinh2;
+
 public class Point {
     private double pointX;
     private double pointY;

@@ -1,4 +1,4 @@
-package kethua2;
+package uetoasis.tuan5.kethua2;
 
 public class Person {
     private String name;
