@@ -28,6 +28,30 @@ public class Circle extends Shape {
     }
 
     /**
+     * This is constructor.
+     */
+    public Circle(Point center, double radius, String color, boolean filled) {
+        this.center = center;
+        this.radius = radius;
+        this.color = color;
+        this.filled = filled;
+    }
+
+    /**
+     * This is to get center.
+     */
+    public Point getCenter() {
+        return center;
+    }
+
+    /**
+     * This is to set center.
+     */
+    public void setCenter(Point center) {
+        this.center = center;
+    }
+
+    /**
      * This is to get radius.
      */
     public double getRadius() {

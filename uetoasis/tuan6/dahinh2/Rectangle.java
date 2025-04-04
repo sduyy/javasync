@@ -1,6 +1,7 @@
-package uetoasis.tuan6.dahinh1;
+package uetoasis.tuan6.dahinh2;
 
 public class Rectangle extends Shape {
+    protected Point topLeft;
     protected double width;
     protected double length;
 
@@ -26,6 +27,30 @@ public class Rectangle extends Shape {
         super(color, filled);
         this.width = width;
         this.length = length;
+    }
+
+    /**
+     * This is constructor.
+     */
+    public Rectangle(Point topLeft, double width, double length, String color, boolean filled) {
+        super(color, filled);
+        this.topLeft = topLeft;
+        this.width = width;
+        this.length = length;
+    }
+
+    /**
+     * This is to get point.
+     */
+    public Point getTopLeft() {
+        return topLeft;
+    }
+
+    /**
+     * This is to set point.
+     */
+    public void setTopLeft(Point topLeft) {
+        this.topLeft = topLeft;
     }
 
     /**
@@ -60,14 +85,14 @@ public class Rectangle extends Shape {
      * This is to get area.
      */
     public double getArea() {
-        return getWidth() * getLength();
+        return width * length;
     }
 
     /**
      * This is to get perimeter.
      */
     public double getPerimeter() {
-        return 2 * (getWidth() + getLength());
+        return 2 * (width + length);
     }
 
     /**
@@ -75,6 +100,6 @@ public class Rectangle extends Shape {
      */
     public String toString() {
         return "Rectangle[width=" + width + ",length=" + length
-                + ",color=" + getColor() + ",filled=" + isFilled() + "]";
+                + ",color=" + color + ",filled=" + filled + "]";
     }
 }
