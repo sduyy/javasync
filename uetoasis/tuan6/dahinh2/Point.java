@@ -40,5 +40,10 @@ public class Point {
         this.pointY = pointY;
     }
 
-    
+    /**
+     * 
+     */
+    public String toString() {
+        return "Point[pointx=" + pointX + ",pointy=" + pointY + "]";
+    }
 }
