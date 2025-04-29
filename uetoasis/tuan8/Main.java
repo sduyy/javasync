@@ -8,6 +8,7 @@ public class Main {
         test.addVehicle(testc);
         test.addVehicle(testm);
 
-        System.out.println(test.getVehiclesInfo());
+        System.out.println(testc.getInfo());
+        // System.out.println(test.getVehiclesInfo());
     }
 }

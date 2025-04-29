@@ -1,3 +1,5 @@
+package uetoasis.tuan8;
+
 public abstract class Vehicle {
     protected String brand;
     protected String model;

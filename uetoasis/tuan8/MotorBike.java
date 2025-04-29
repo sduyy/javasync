@@ -1,3 +1,5 @@
+package uetoasis.tuan8;
+
 public class MotorBike extends Vehicle {
     private boolean hasSidecar;
 
@@ -5,7 +7,7 @@ public class MotorBike extends Vehicle {
      * This is constructor.
      */
     public MotorBike(String brand, String model, String registrationNumber, 
-                     Person owner, boolean hasSidecar) {
+                        Person owner, boolean hasSidecar) {
         super(brand, model, registrationNumber, owner);
         this.hasSidecar = hasSidecar;
     }
@@ -14,25 +16,25 @@ public class MotorBike extends Vehicle {
      * This is to get info.
      */
     public String getInfo() {
-        return "Motorbike:" + "\n"
-                + "  Brand: " + this.brand + "\n"
-                + "  Model: " + this.model + "\n"
-                + "  Registration Number: " + this.registrationNumber + "\n"
-                + "  Has Side Car: " + this.hasSidecar + "\n"
-                + "  Belongs to " + owner.getName() + " - " + owner.getAddress();
+        return "Motor Bike:" + "\n\t"
+                + "Brand: " + this.brand + "\n\t"
+                + "Model: " + this.model + "\n\t"
+                + "Registration Number: " + this.registrationNumber + "\n\t"
+                + "Has Side Car: " + this.hasSidecar + "\n\t"
+                + "Belongs to " + owner.getName() + " - " + owner.getAddress();
     }
 
     /**
      * This is to get.
      */
-    public boolean isHasSideCar() {
+    public boolean isHasSidecar() {
         return this.hasSidecar;
     }
 
     /**
      * This is to set.
      */
-    public void setHasSideCar(boolean hasSidecar) {
+    public void setHasSidecar(boolean hasSidecar) {
         this.hasSidecar = hasSidecar;
     }
 }

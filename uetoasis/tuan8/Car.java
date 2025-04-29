@@ -1,3 +1,5 @@
+package uetoasis.tuan8;
+
 public class Car extends Vehicle {
     private int numberOfDoors;
 
@@ -5,7 +7,7 @@ public class Car extends Vehicle {
      * This is constructor.
      */
     public Car(String brand, String model, String registrationNumber, 
-               Person owner, int numberOfDoors) {
+                Person owner, int numberOfDoors) {
         super(brand, model, registrationNumber, owner);
         this.numberOfDoors = numberOfDoors;
     }
@@ -14,12 +16,12 @@ public class Car extends Vehicle {
      * This is to get info.
      */
     public String getInfo() {
-        return "Car:" + "\n"
-                + "  Brand: " + this.brand + "\n"
-                + "  Model: " + this.model + "\n"
-                + "  Registration Number: " + this.registrationNumber + "\n"
-                + "  Number of Doors: " + this.numberOfDoors + "\n"
-                + "  Belongs to " + owner.getName() + " - " + owner.getAddress();
+        return "Car:" + "\n\t"
+                + "Brand: " + this.brand + "\n\t"
+                + "Model: " + this.model + "\n\t"
+                + "Registration Number: " + this.registrationNumber + "\n\t"
+                + "Number of Doors: " + this.numberOfDoors + "\n\t"
+                + "Belongs to " + owner.getName() + " - " + owner.getAddress();
     }
 
     /**
