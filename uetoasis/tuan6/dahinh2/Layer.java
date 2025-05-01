@@ -1,9 +1,14 @@
 package uetoasis.tuan6.dahinh2;
 
+import java.util.List;
 import java.util.ArrayList;
 
 public class Layer {
-    private ArrayList<Shape> shapes;
+    private List<Shape> shapes;
+
+    public Layer() {
+        shapes = new ArrayList<>();
+    }
 
     /**
      * This is to add shape.

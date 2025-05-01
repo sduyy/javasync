@@ -22,8 +22,7 @@ public class Circle extends Shape {
      * This is constructor.
      */
     public Circle(double radius, String color, boolean filled) {
-        this.radius = radius;
-        this.color = color;
+        super(color, filled);
         this.filled = filled;
     }
 
@@ -31,10 +30,9 @@ public class Circle extends Shape {
      * This is constructor.
      */
     public Circle(Point center, double radius, String color, boolean filled) {
+        super(color, filled);
         this.center = center;
         this.radius = radius;
-        this.color = color;
-        this.filled = filled;
     }
 
     /**
