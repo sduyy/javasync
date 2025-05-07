@@ -1,5 +1,3 @@
-package uetoasis.tuan7;
-
 import java.lang.Math;
 
 public class Point {
@@ -46,6 +44,7 @@ public class Point {
      * This is distance.
      */
     public double distance(Point other) {
-        return Math.sqrt(Math.pow(this.pointX - other.pointX, 2) + Math.pow(this.pointY - other.pointY, 2));
+        return Math.sqrt(Math.pow(this.pointX - other.pointX, 2)
+               + Math.pow(this.pointY - other.pointY, 2));
     }
 }

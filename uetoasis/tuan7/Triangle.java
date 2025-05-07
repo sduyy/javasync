@@ -1,6 +1,4 @@
-package uetoasis.tuan7;
-
-public class Triangle implements GeometricObject{
+public class Triangle implements GeometricObject {
     private Point p1;
     private Point p2;
     private Point p3;
@@ -8,10 +6,19 @@ public class Triangle implements GeometricObject{
     /**
      * This is constructor.
      */
-    public Triangle(Point p1, Point p2, Point p3) throws RuntimeException{
-        if (p1 == p2 || p2 == p3 || p3 == p1) {
-            throw new RuntimeException("bruh");
+    public Triangle(Point p1, Point p2, Point p3) throws RuntimeException {
+        if (p1.equals(p2) || p2.equals(p3) || p3.equals(p1)) {
+            throw new RuntimeException("co 2 diem trung nhau");
         }
+        
+        double first = p1.getPointX() * (p2.getPointY() - p3.getPointY());
+        double second = p2.getPointX() * (p3.getPointY() - p1.getPointY());
+        double third = p3.getPointX() * (p1.getPointY() - p2.getPointY());
+        double area = (Math.abs(first + second + third)) / 2;
+        if (area == 0) {
+            throw new RuntimeException("co 3 diem thang hang");
+        }
+
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;

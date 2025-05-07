@@ -1,7 +1,5 @@
-package uetoasis.tuan7;
-
-public class Circle implements GeometricObject{
-    private final double pi = 3.14;
+public class Circle implements GeometricObject {
+    public static final double pi = 3.14;
     private Point center;
     private double radius;
 
