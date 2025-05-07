@@ -1,5 +1,3 @@
-package uetoasis.tuan9.CoVua;
-
 import java.util.ArrayList;
 
 public class Board {

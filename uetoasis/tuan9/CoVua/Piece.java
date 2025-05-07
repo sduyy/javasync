@@ -1,5 +1,3 @@
-package uetoasis.tuan9.CoVua;
-
 public abstract class Piece {
     private int coordinatesX;
     private int coordinatesY;
@@ -75,6 +73,6 @@ public abstract class Piece {
     }
 
     public boolean checkPosition(Piece piece) {
-
+        return true;
     }
 }

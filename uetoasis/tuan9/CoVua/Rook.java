@@ -1,8 +1,6 @@
-package uetoasis.tuan9.CoVua;
-
 import java.util.ArrayList;
 
-public class Rook extends Piece{
+public class Rook extends Piece {
     /**
      * This is constructor.
      */
@@ -29,10 +27,13 @@ public class Rook extends Piece{
      */
     public boolean canMove(Board board, int x, int y) {
         boolean check = true;
-        if ((x == this.getCoordinatesX() && y != this.getCoordinatesY()) || (x != this.getCoordinatesX() && y == this.getCoordinatesY())) {
+        if ((x == this.getCoordinatesX() && y != this.getCoordinatesY()) 
+         || (x != this.getCoordinatesX() && y == this.getCoordinatesY())) {
             ArrayList<Piece> pieces = board.getPieces();
             for (Piece p : pieces) {
-                if (x == p.getCoordinatesX() && y == p.getCoordinatesY() && this.getColor() == p.getColor()) {
+                if (x == p.getCoordinatesX() 
+                 && y == p.getCoordinatesY() 
+                 && this.getColor() == p.getColor()) {
                     check = false;
                     break;
                 }

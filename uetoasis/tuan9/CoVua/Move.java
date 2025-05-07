@@ -1,5 +1,3 @@
-package uetoasis.tuan9.CoVua;
-
 public class Move {
     private int startX;
     private int endX;
@@ -32,7 +30,7 @@ public class Move {
     }
 
     public String toString() {
-        
+        return "bruh";
     }
 
     /**
