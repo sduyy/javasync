@@ -30,7 +30,8 @@ public class Board {
         if (validate(piece.getCoordinatesX(), piece.getCoordinatesY())) {
             boolean check = true;
             for (Piece p : pieces) {
-                if (p.getCoordinatesX() == piece.getCoordinatesX() && p.getCoordinatesY() == piece.getCoordinatesY()) {
+                if (p.getCoordinatesX() == piece.getCoordinatesX() 
+                 && p.getCoordinatesY() == piece.getCoordinatesY()) {
                     check = false;
                 }
             }
@@ -56,9 +57,11 @@ public class Board {
      * This is to remove.
      */
     public void removeAt(int x, int y) {
-        for (Piece p : pieces) {
+        for (int i = 0; i < pieces.size(); i++) {
+            Piece p = pieces.get(i);
             if (p.getCoordinatesX() == x && p.getCoordinatesY() == y) {
-                pieces.remove(p);
+                pieces.remove(i);
+                i--; // adjust index after removal
             }
         }
     }

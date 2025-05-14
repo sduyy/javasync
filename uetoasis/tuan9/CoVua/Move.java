@@ -29,6 +29,9 @@ public class Move {
         this.killedPiece = killedPiece;
     }
 
+    /**
+     * This is to string.
+     */
     public String toString() {
         return "bruh";
     }

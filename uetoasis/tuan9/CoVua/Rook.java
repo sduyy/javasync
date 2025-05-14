@@ -33,7 +33,7 @@ public class Rook extends Piece {
             for (Piece p : pieces) {
                 if (x == p.getCoordinatesX() 
                  && y == p.getCoordinatesY() 
-                 && this.getColor() == p.getColor()) {
+                 && this.getColor().equals(p.getColor())) {
                     check = false;
                     break;
                 }
